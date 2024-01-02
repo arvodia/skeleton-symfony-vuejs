@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    {{ vite_entry_link_tags('main') }}
+{% endblock %}
+    {% block javascripts %}
+        {{ parent() }}
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        {{ vite_entry_script_tags('main') }}
+    {% endblock %}
+{% block body %}
+    <div id="app"></div>
+{% endblock %}
