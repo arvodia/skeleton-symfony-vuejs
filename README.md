@@ -6,6 +6,7 @@ A web application skeleton using vuejs, vite and Symfony 6
 
   - login
   - register
+  - account setting
   - translate
   - create token
   - systeme refresh token
@@ -25,7 +26,7 @@ php bin/console lexik:jwt:generate-keypair
 
 configure the `refresh_token_path` variable in the `assets/api/apiPrivate.js` file
 
-## envoye de mail async
+## sending async email
 
 in `config/packages/messenger.yaml` uncomment the variable `Symfony\Component\Mailer\Messenger\SendEmailMessage: async`
 
