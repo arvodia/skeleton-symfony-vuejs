@@ -20,8 +20,7 @@ export default function apiPrivate() {
             (config) => {
         const token = useUserStore().getToken;
         if (token && config.url !== refresh_token_path) {
-            config.headers["Authorization"] = 'Bearer ' + token;  // for Spring Boot back-end
-//            config.headers["x-access-token"] = token; // for Node.js Express back-end
+            config.headers["Authorization"] = 'Bearer ' + token;  
         }
         return config;
     },

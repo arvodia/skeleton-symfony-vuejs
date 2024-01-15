@@ -17,6 +17,8 @@ A web application skeleton using vuejs, vite and Symfony 6
 
 ```
 composer install
+npm install
+npm run build
 php bin/console doctrine:database:create
 php bin/console doctrine:migration:migrate
 php bin/console lexik:jwt:generate-keypair
